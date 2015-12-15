@@ -1,0 +1,17 @@
+Tue, 15 Dec 2015 20:10:47 +0000
+./lib/disqus/version.rb	Tue, 15 Dec 2015 20:09:03 +0000
+./lib/disqus/model/concerns/buildable.rb	Tue, 15 Dec 2015 19:29:27 +0000
+./lib/disqus/model/user.rb	Tue, 15 Dec 2015 19:57:09 +0000
+./lib/disqus/model/thread.rb	Tue, 15 Dec 2015 19:57:01 +0000
+./lib/disqus/model/media.rb	Tue, 15 Dec 2015 19:56:32 +0000
+./lib/disqus/model/forum.rb	Tue, 15 Dec 2015 19:56:26 +0000
+./lib/disqus/model/post.rb	Tue, 15 Dec 2015 19:56:39 +0000
+./lib/disqus/model.rb	Tue, 15 Dec 2015 20:08:03 +0000
+./lib/disqus.rb	Tue, 15 Dec 2015 20:06:39 +0000
+./README.md	Tue, 15 Dec 2015 20:06:46 +0000
+./Gemfile	Tue, 15 Dec 2015 19:16:06 +0000
+./bin/setup	Tue, 15 Dec 2015 19:16:06 +0000
+./bin/console	Tue, 15 Dec 2015 20:06:06 +0000
+./Gemfile.lock	Tue, 15 Dec 2015 19:29:29 +0000
+./Rakefile	Tue, 15 Dec 2015 20:09:17 +0000
+./disqus.gemspec	Tue, 15 Dec 2015 19:18:37 +0000
