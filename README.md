@@ -7,7 +7,7 @@ Just a simple client to access Disqus' API.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'disqus', github: 'rodrigovdb/disqus-api
+gem 'disqus', github: 'rodrigovdb/disqus-api'
 ```
 
 define into your application's .env the DIQUS_API_KEY entry with your key.
