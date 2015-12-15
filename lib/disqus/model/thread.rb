@@ -8,7 +8,7 @@ module Disqus
       url       = "https://disqus.com/api/3.0/threads/details.json?api_key=#{api_key}&thread=#{id}"
       response  = make_request url
   
-      DisqusThread.assemble_with_attributes response
+      assemble_with_attributes response
     end
   
     # Lazy load. Just search posts if is asked for.
