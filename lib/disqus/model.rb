@@ -9,7 +9,7 @@ module Disqus
     end
   
     def api_key
-      BaseDisqus.api_key
+      Disqus::Model.api_key
     end
   
     def self.make_request(url)
