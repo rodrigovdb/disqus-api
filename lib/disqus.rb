@@ -8,7 +8,7 @@ require "dotenv"
 require "disqus/version"
 
 require_relative "disqus/model/concerns/buildable"
-#require_relative "model"
+require_relative "model"
 #require_relative "model/thread"
 #require_relative "model/post"
 #require_relative "model/media"
