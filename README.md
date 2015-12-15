@@ -32,7 +32,7 @@ require 'disqus-api-client'
 
 ## Usage
 
-
+See doc/ dir
 
 
 ## Contributing
