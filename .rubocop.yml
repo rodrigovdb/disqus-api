@@ -1,0 +1,23 @@
+# https://github.com/bbatsov/rubocop/blob/master/config/enabled.yml
+LineLength:
+    Max: 140
+AndOr:
+  Enabled: false
+Documentation:
+  Enabled: false
+DefWithParentheses:
+  Enabled: false
+MethodDefParentheses:
+  Enabled: false
+DotPosition:
+  Enabled: false
+SingleSpaceBeforeFirstArg:
+  Enabled: false
+AllCops:
+  Include:
+    - Rakefile
+  Exclude:
+    - db/schema.rb
+    - coverage/**/*
+    - !ruby/regexp /old_and_unused\.rb$/
+  RunRailsCops: true
