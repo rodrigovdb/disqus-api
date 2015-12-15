@@ -4,6 +4,7 @@ require "curb"
 require "json"
 require "yaml"
 require "dotenv"
+Dotenv.load
 
 require "disqus/version"
 
