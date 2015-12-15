@@ -1,5 +1,5 @@
 module Disqus
-  class User < Disqus::Model
+  class User < Model
     attr_accessor :id, :disable3rdPartyTrackers, :isPowerContributor, :connections, :isPrimary, :id, :numFollowers, :rep, :numFollowing,
                   :numPosts, :location, :isPrivate, :joinedAt, :username, :numLikesReceived, :about, :name, :url, :numForumsFollowing,
                   :profileUrl, :reputation, :avatar, :signedUrl, :isAnonymous, :active_forums
@@ -8,7 +8,7 @@ module Disqus
       url       = "https://disqus.com/api/3.0/users/details.json?api_key=#{api_key}&user=#{id}"
       response  = make_request url
 
-      Disqus::User.assemble_with_attributes response
+      User.assemble_with_attributes response
     end
 
     def active_forums

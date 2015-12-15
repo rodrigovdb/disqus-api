@@ -14,7 +14,7 @@ require_relative "disqus/model/thread"
 require_relative "disqus/model/post"
 require_relative "disqus/model/media"
 require_relative "disqus/model/forum"
-#require_relative "disqus/model/user"
+require_relative "disqus/model/user"
 
 module Disqus
   def self.foo

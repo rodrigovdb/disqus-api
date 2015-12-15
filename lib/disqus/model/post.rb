@@ -1,5 +1,5 @@
 module Disqus
-  class Post < Disqus::Model
+  class Post < Model
     attr_accessor :id, :forum, :parent, :isApproved, :author, :media, :isDeleted, :isFlagged, :dislikes,
                   :raw_message, :createdAt, :id, :thread, :numReports, :isDeletedByAuthor, :likes,
                   :isEdited, :message, :isSpam, :isHighlighted, :points

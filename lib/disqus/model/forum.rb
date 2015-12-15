@@ -1,5 +1,5 @@
 module Disqus
-  class Forum < Disqus::Model
+  class Forum < Model
     attr_accessor :id, :category, :description, :founder, :settings, :url, :guidelines, :favicon, :language, :avatar,
                   :pk, :signedUrl, :raw_guidelines, :id, :channel, :name
 
