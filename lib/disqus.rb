@@ -12,7 +12,7 @@ require_relative "disqus/model/concerns/buildable"
 require_relative "disqus/model"
 require_relative "disqus/model/thread"
 require_relative "disqus/model/post"
-#require_relative "disqus/model/media"
+require_relative "disqus/model/media"
 #require_relative "disqus/model/forum"
 #require_relative "disqus/model/user"
 
