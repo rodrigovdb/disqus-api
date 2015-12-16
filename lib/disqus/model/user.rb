@@ -2,7 +2,7 @@ module Disqus
   class User < Model
     attr_accessor :id, :disable3rdPartyTrackers, :isPowerContributor, :connections, :isPrimary, :id, :numFollowers, :rep, :numFollowing,
                   :numPosts, :location, :isPrivate, :joinedAt, :username, :numLikesReceived, :about, :name, :url, :numForumsFollowing,
-                  :profileUrl, :reputation, :avatar, :signedUrl, :isAnonymous, :active_forums
+                  :profileUrl, :reputation, :avatar, :signedUrl, :isAnonymous, :forums
 
     def self.find(id)
       url       = "https://disqus.com/api/3.0/users/details.json?api_key=#{api_key}&user=#{id}"
@@ -11,14 +11,14 @@ module Disqus
       User.assemble_with_attributes response
     end
 
-    def active_forums
-      return @active_forums unless @active_forums.nil?
+    def forums
+      return @forums unless @forums.nil?
 
-      @active_forums = []
+      @forums = []
       items = forums_from_remote
-      items.each { |forum| @active_forums << Disqus::Forum.assemble_with_attributes(forum) }
+      items.each { |forum| @forums << Disqus::Forum.assemble_with_attributes(forum) }
 
-      @active_forums
+      @forums
     end
 
     private
