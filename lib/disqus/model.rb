@@ -12,8 +12,9 @@ module Disqus
       Disqus::Model.api_key
     end
 
-    def self.make_request(url)
-      http      = Curl.get url
+    def self.make_request(url, method=:get)
+      method    = method.to_sym
+      http      = Curl.send method, url
       response  = JSON.parse(http.body_str)
 
       fail "ERROR CODE #{response['code']} :: #{response['response']}" unless http.status == '200 OK'

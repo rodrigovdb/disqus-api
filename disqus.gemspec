@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.summary       = %q{Abstraction layer to Disqus' API}
-  spec.description   = %q{Abstraction layer to Disqus' API}
+  spec.description   = %q{Abstraction layer to Disqus' API - Get and manage disqus objects wia RESTful request}
   spec.homepage      = "https://github.com/rodrigovdb/disqus-api-client"
   spec.license       = "GPLv3"
 

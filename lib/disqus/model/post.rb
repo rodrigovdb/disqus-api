@@ -32,5 +32,10 @@ module Disqus
 
       @author = Disqus::User.find @author['id']
     end
+
+    def remove
+      url = "https://disqus.com/api/3.0/posts/remove.json?api_key=#{api_key}&post=#{id}"
+      Disqus::Model.make_request url, :post
+    end
   end
 end
