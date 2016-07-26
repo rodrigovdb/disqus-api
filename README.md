@@ -32,7 +32,7 @@ require 'disqus-api-client'
 
 ## Usage
 
-See doc/ dir
+http://rodrigovdb.github.io/disqus-api
 
 
 ## Contributing
